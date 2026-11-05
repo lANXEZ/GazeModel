@@ -1,4 +1,8 @@
 mediapipe>=1.2
 numpy>=2.0
 PySide6>=6.8
+safetensors>=0.4
 # opencv-contrib-python is installed by mediapipe; don't also install opencv-python (they clash)
+
+# Optional, for the deep-learning gaze model. Install from PyTorch's CUDA index so it uses the GPU:
+#   .\.venv\Scripts\python.exe -m pip install torch torchvision --index-url https://download.pytorch.org/whl/cu130
